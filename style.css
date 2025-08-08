@@ -1,42 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.main{
-    background-image: url("assets/img/netflix_back_main.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: max(1000px, 100vw);
-    height: 80vh;
-    position: relative;
+body {
+  background-color: black;
 }
 
-.main .box{
-    height: 80vh;
-    width: 100%;
-    opacity: 0.44;
-    background-color: black;
-    position: absolute;
-    top:0;
+.main {
+  background-image: url("assets/img/netflix_back_main.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+  height: 80vh;
+  position: relative;
 }
 
-nav{
-    max-width: 60vw;
-    justify-content: space-between;
-    margin: auto;
+.main .box {
+  height: 80vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 90vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  justify-items: center;
+  height: 62px;
+  padding-top: 30px;
+}
+
+nav img {
+  color: rgb(229, 9, 20);
+  width: 9.25rem;
+    height: 2.5rem;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.front {
+  height: calc(100% -62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  font-family: "Martel Sans", sans-serif;
+  gap: 23px;
+  padding:90px 0 0 0;
+}
+
+.front > :first-child {
+  font-size: 56px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.front > :nth-child(2) {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.front > :nth-child(3) {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.seperation {
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    rgba(33, 13, 22, 1) 16%,
+    rgba(184, 40, 105, 1),
+    rgba(229, 9, 20, 1),
+    rgba(184, 40, 105, 1),
+    rgba(33, 13, 22, 1) 84%
+    );
+    ;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 500;
+    background-color: white;
+    border: transparent;
+}
+
+.btn-red{
+    background-color: rgb(229, 9, 20);
+    color:white;
+    padding:6px 16px 6px 16px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+.front-buttons{
     display: flex;
-    justify-items: center;
-    height: 62px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
-nav img{
-    color:red;
-    width: 120px;
-    position: relative;
-    z-index: 10;
+.main input{
+    color:white;
+    background-color: rgba(30,30,30,0.7);
+    padding:7px 110px 8px 14px ;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    border: 1px solid rgba(248, 241, 241, 0.2);
+
 }
-nav button{
-    position: relative;
-    z-index: 10;
+
+.btn-red-sn{
+    background-color: rgb(229, 9, 20);
+    color:white;
 }
